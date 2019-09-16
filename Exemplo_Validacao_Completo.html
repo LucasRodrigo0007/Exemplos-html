@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <META http-equiv="Content-Type" Content="text/html"; charset="UTF-8" />
+    <Title>Exemplo Validação de Formulário com HTML5</Title>
+    <STYLE>
+        #Email:valid {background:#98FB98; color: #fff}
+        #Email:invalid {background:#FA8072; color: #fff}
+    </STYLE>
+    </head>
+    <BODY>
+        <FORM method="post">
+        <Label for="nome">Nome: </Label>
+        <Input id="nome" type="text" required>
+        <Input type=submit value="OK"> Exemplo de campo de required
+        </FORM>
+
+        <FORM method="get">
+        <!--Comentario-->
+        <Label for="email">E-mail: </Label>
+        <Input id="email" type="email" required>
+        <input type="submit" value="OK">
+        Exemplo de campo com required e type=email mais exemplo pseudoclasse :valid e :invalid
+        </FORM>
+
+        <FORM method="post">
+        <label for="site">Site: </label>
+        <input required name="tel" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}">(xx) xxxx-xxxx
+        <input type="submit" value="Enviar"> Exemplo de campo com pattern.
+        Mascara de entrada \([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}
+
+        </FORM>
+
+    </BODY>
+</HTML>
